@@ -1,0 +1,109 @@
+# ==============================================================================
+# LARAVEL & ENVIRONMENT SENSITIVE FILES (SANGAT KRUSIAL - JANGAN DI-PUSH!)
+# ==============================================================================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+oauth-private.key
+oauth-public.key
+*service-account*.json
+*google-credentials*.json
+*firebase*.json
+
+# ==============================================================================
+# DEPENDENCIES & PACKAGES (Composer, NPM, Yarn, PNPM)
+# ==============================================================================
+/vendor
+/node_modules
+/auth.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==============================================================================
+# STORAGE & LOGS (Log sistem, sesi, cache, dan file unggahan)
+# ==============================================================================
+/storage/*.key
+/storage/pail
+/storage/app/*
+!/storage/app/.gitignore
+!/storage/app/public
+!/storage/app/private
+/storage/app/public/*
+!/storage/app/public/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+!/storage/framework/cache/data
+/storage/framework/cache/data/*
+!/storage/framework/cache/data/.gitignore
+!/storage/framework/cache/locks
+/storage/framework/cache/locks/*
+!/storage/framework/cache/locks/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+*.log
+
+# ==============================================================================
+# PUBLIC COMPILED ASSETS & STORAGE SYMLINK
+# ==============================================================================
+/public/build
+/public/hot
+/public/storage
+/public/fonts-manifest.dev.json
+
+# ==============================================================================
+# DATABASE DUMPS & LOCAL DATABASE FILES
+# ==============================================================================
+*.sqlite
+*.sqlite-journal
+*.sql
+*.dump
+*.db
+
+# ==============================================================================
+# DEVELOPMENT SCRATCH & TEMPORARY FILES
+# ==============================================================================
+/scratch/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ==============================================================================
+# IDE, EDITORS & TOOLING CACHE
+# ==============================================================================
+/.vscode
+/.idea
+/.cursor/
+/.codex
+/.fleet
+/.nova
+/.zed
+.phpactor.json
+.phpunit.result.cache
+/.phpunit.cache
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+Homestead.json
+Homestead.yaml
+
+# ==============================================================================
+# OPERATING SYSTEM ARTIFACTS
+# ==============================================================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
